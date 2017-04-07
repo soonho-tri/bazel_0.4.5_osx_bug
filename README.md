@@ -8,7 +8,7 @@ Bazel does not detect changes in `.h` file.
 Steps to reproduce
 ------------------
 
-```
+```bash
 brew install bazel # make sure you have bazel-0.4.5 installed.
 
 # Clone this repo.
