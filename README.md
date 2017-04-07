@@ -17,7 +17,6 @@ bazel build --crosstool_top=//tools:default-toolchain :helloworld
 bazel build --crosstool_top=//tools:default-toolchain :helloworld
 
 # BUG: the above line does *NOT* generate a compilation error:
-# $ bazel build //...
 # INFO: Found 11 targets...
 # INFO: Elapsed time: 0.167s, Critical Path: 0.00s
 ```
