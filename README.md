@@ -1,4 +1,12 @@
-Reproducible Steps
+We found an issue while using `bazel-0.4.5` on OSX while developing [Drake](https://drake.mit.edu] project. This repository is a minimal setup which helps reproduce/debug the problem.
+
+Symptom
+-------
+
+Bazel does not detect changes in `.h` file.
+
+Steps to reproduce
+------------------
 
 ```
 brew install bazel # make sure you have bazel-0.4.5 installed.
@@ -20,3 +28,12 @@ bazel build --crosstool_top=//tools:default-toolchain :helloworld
 # INFO: Found 11 targets...
 # INFO: Elapsed time: 0.167s, Critical Path: 0.00s
 ```
+
+Remarks
+-------
+
+Bazel Version | Ubuntu  | OSX
+------------- | ------- | ----
+0.4.4         |   OK    |  OK
+0.4.5         |   OK    |  Bug (fine without using `--crosstool_top` option)
+
