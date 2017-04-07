@@ -1,4 +1,4 @@
-We found an issue while using `bazel-0.4.5` on OSX while developing [Drake](https://drake.mit.edu] project. This repository is a minimal setup which helps reproduce/debug the problem.
+We found an issue while using `bazel-0.4.5` on OSX while developing [Drake](https://drake.mit.edu) project. This repository is a minimal setup which helps reproduce/debug the problem.
 
 Symptom
 -------
